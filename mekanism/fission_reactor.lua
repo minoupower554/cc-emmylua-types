@@ -1,0 +1,29 @@
+---@meta
+
+---@class reactorTank Amount and type of a liquid
+---@field amount number The amount of liquid in the tank
+---@field name string The type of liquid in the tank
+
+---@class ReactorPeripheral : IPeripheral The Fission Reactor as returned by peripheral.wrap()
+---@field activate fun() Activate the reactor, throws an error if the reactor is already online
+---@field scram fun() Deactivate The Reactor, throws an error if the reactor is already offline
+---@field getStatus fun(): boolean Will return true if the reactor is online, false otherwise
+---@field getTemperature fun(): number Return the reactor temperature in Kelvin
+---@field getDamagePercent fun(): number Returns the current damage amount
+---@field getCoolant fun(): reactorTank Returns the amount and type of coolant present in the reactor
+---@field getCoolantFilledPercentage fun(): number Returns how full the coolant tank is in percent
+---@field getHeatedCoolant fun(): reactorTank Returns the amount and type of heated coolant present in the reactor
+---@field getHeatedCoolantFilledPercentage fun(): number Returns how full the heated coolant tank is in percent
+---@field getFuel fun(): reactorTank Returns the amount and type of fuel present in the reactor
+---@field getFuelFilledPercentage fun(): number Returns how full the fuel tank is in percent
+---@field getFuelNeeded fun(): number Returns how much fuel is needed to completely fill the fuel tank
+---@field getFuelCapacity fun(): number Returns the total fuel capacity of the reactor
+---@field getWaste fun(): reactorTank Returns the amount and type of waste present in the reactor
+---@field getWasteFilledPercentage fun(): number Returns how full the waste tank is in percent
+---@field getBurnRate fun(): number Returns the set reactor burn rate
+---@field getActualBurnRate fun(): number Returns the actual burn rate (i presume after clamping to reactor constraints, i could not find docs on this at all)
+---@field getMaxBurnRate fun(): number Returns the maximum possible reactor burn rate
+---@field getHeatingRate fun(): number Returns the amount of coolant heated in mb/t
+---@field getEnvironmentalLoss fun(): number Returns the environmental loss
+---@field isForceDisabled fun(): boolean Returns whether the reactor is force disabled
+---@field setBurnRate fun(rate: number): nil set the desired burn rate

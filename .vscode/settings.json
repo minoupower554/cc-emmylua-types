@@ -1,0 +1,8 @@
+{
+    "Lua.runtime.builtin": {
+        "os": "disable",
+        "io": "disable"
+    },
+    "Lua.runtime.version": "Lua 5.2",
+    "r.lsp.promptToInstall": false
+}
