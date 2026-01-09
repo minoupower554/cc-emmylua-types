@@ -6,3 +6,4 @@
 ---@field getSteam fun(): ChemicalStack The contents of the steam tank
 ---@field getSteamFilledPercentage fun(): number The amount of steam in the tank in percent
 ---@field getMaxProduction fun(): number The maximum amount of energy the turbine can produce
+---@field getProductionRate fun(): number The energy production rate of the turbine
