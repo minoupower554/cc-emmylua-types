@@ -1,0 +1,43 @@
+---@meta
+
+---@class colors Constants and functions for color values
+---@field white number
+---@field orange number
+---@field magenta number
+---@field lightBlue number
+---@field yellow number
+---@field pink number 
+---@field gray number
+---@field lightGray number
+---@field cyan number
+---@field purple number
+---@field blue number
+---@field brown number
+---@field green number
+---@field red number
+---@field black number
+---@field toBlit fun(color: number): string converts the given color to its blit representation
+---@field fromBlit fun(blit: string): number converts the blit character to its integer representation
+---@type colors
+colors = colors
+
+---@class colours Constants and functions for colour values
+---@field white number
+---@field orange number
+---@field magenta number
+---@field lightBlue number
+---@field yellow number
+---@field pink number 
+---@field grey number
+---@field lightGrey number
+---@field cyan number
+---@field purple number
+---@field blue number
+---@field brown number
+---@field green number
+---@field red number
+---@field black number
+---@field toBlit fun(colour: number): string converts the given colour to its blit representation
+---@field fromBlit fun(blit: string): number converts the blit character to its integer representation
+---@type colours
+colours = colours
