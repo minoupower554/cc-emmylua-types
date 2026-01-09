@@ -5,5 +5,6 @@ package.path = path:match("^(.*)/[^/]*$") .. "/?.lua;" .. package.path
 
 require('types.computercraft')
 require('types.mekanism')
+require('types.advanced_peripherals')
 
 package.path = old_path -- reset path
