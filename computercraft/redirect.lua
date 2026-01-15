@@ -11,7 +11,7 @@
 ---@field getTextColor fun(): number Returns the current text color
 ---@field getTextColour fun(): number Returns the current text colour
 ---@field setTextColor fun(color: number): nil Set the text color
----@field setTextColor fun(color: number): nil Set the text colour
+---@field setTextColour fun(color: number): nil Set the text colour
 ---@field getBackgroundColor fun(): number Returns the current background color
 ---@field getBackgroundColour fun(): number Returns the current background colour
 ---@field setBackgroundColor fun(color: number): nil Set the background color
