@@ -9,5 +9,8 @@
 ---@field getDir fun(path: string): string get the directory part of the passed path
 ---@field combine fun(path: string, ...: string): string concatenate 2 paths, adding separators as needed
 ---@field exists fun(path: string): boolean checks if the specified path exists
+---@field makeDir fun(path: string): nil create a directory and all its parents if they don't exist. throws if the directory couldn't be created
+---@field move fun(path: string, dest: string): nil copies the file or directory to the provided destination, creates all parents as needed. throws if it couldn't copy the file or directory
+---@field delete fun(path: string): nil recursively deletes the provided file or directory. throws if it couldn't delete the file or directory
 ---@type fs
 fs = fs
