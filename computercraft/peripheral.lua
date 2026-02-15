@@ -8,5 +8,7 @@
 ---@field getMethods fun(id: string): string[]|nil get all supported methods of a peripheral
 ---@field isPresent fun(id: string): boolean check if a peripheral is present
 ---@field getName fun(id: string): string|nil get the type of a peripheral
+---@field getType fun(peripheral: string|IPeripheral): string|nil get the type of a peripheral
+---@field hasType fun(peripheral: string|IPeripheral, type: string): boolean check if a peripheral is of a specific type
 ---@type peripheral
 peripheral = peripheral
