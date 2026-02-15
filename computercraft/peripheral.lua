@@ -6,5 +6,7 @@
 ---@field wrap fun(id: string): IPeripheral returns a table containing all functions of the specified peripheral
 ---@field call fun(id: string, function: string, ...: string) directly call a method on a peripheral without wrapping it
 ---@field getMethods fun(id: string): string[]|nil get all supported methods of a peripheral
+---@field isPresent fun(id: string): boolean check if a peripheral is present
+---@field getName fun(id: string): string|nil get the type of a peripheral
 ---@type peripheral
 peripheral = peripheral
